@@ -1,10 +1,32 @@
-/* Sidebar button padding */
-.sidebar .btn {
-    margin-bottom: 10px;
+.navbar {
+    background-color: #5d656d;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+.search-box {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.sidebar {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+.col-md-3{
+    margin-top: 8.3%;
 }
 
-/* Carousel text styling */
-.carousel-item {
-    font-size: 1.5rem;
-    text-align: center;
+.contents {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-left: 10px;
+    width: 30%;
+    margin-top: 10px;
+}
+.highlight {
+    display: inline-block;
 }
