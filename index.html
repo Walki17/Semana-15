@@ -1,67 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">LOREM IPSUM</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dolor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Amet</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2 search-box" type="search" placeholder="Search" aria-label="Search">
-                </form>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">LOREM IPSUM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column flex-lg-row"> 
+                        <form class="nav-item dropdown d-lg-none" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Dolor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Amet</a>
+                        </li>
+                        <li class="nav-item dropdown d-lg-none"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Opciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                                <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                                <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                                <li><a class="dropdown-item" href="#">Opción 4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-none d-lg-flex" role="search"> <!-- Solo visible en LG -->
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
-    <div class="container mt-4">
+        </nav>
+    </div>
+    <div class="container-fluid mt-4">
         <div class="row">
-            <div class="col-md-3">
+            <!-- Barra lateral: Se oculta en pantallas medianas o menores -->
+            <div id="Opciones" class="col-lg-3 d-none d-lg-block">
                 <button class="sidebar">Opción 1</button>
                 <button class="sidebar">Opción 2</button>
                 <button class="sidebar">Opción 3</button>
                 <button class="sidebar">Opción 4</button>
             </div>
             
-            <div class="col-md-9">
-                <div class="content text-center">
+            <div class="col-12 col-lg-9">
+                <div class="content text-center d-none d-md-block">
                     <h2>Lorem ipsum...</h2>
                     <p id="random-text">...vestibulum mollis, tortor ac congue commodo</p>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-3 contents">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 contents">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis, tortor ac congue commodo, nisi neque bibendum elit, quis vulputate dolor augue ut mauris. tincidunt.</p>
                     </div>
-                    <div class="col-md-3 contents">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 contents">
                         <p>Phasellus eleifend semper tempor. Quisque mi lorem, laoreet eu urna sit amet, tempor volutpat est. Vestibulum lobortis nulla vel odio laoreet, iaculis rhoncus neque porttitor.</p>
                     </div>
-                    <div class="col-md-3 contents">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 contents">
                         <p>Mauris mattis porttitor erat, in pharetra risus fringilla lobortis. Vestibulum et ante commodo, imperdiet neque ac, tempus felis. Nullam sed pharetra purus. Donec sit amet ultricies nisi.</p>
                     </div>
-                    <div class="col-md-3 contents">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 contents">
                         <p>In mi velit, fringilla sed velit vel, ornare varius dui. Nunc viverra diam sit amet mollis posuere. Nullam semper odio in consectetur ornare.</p>
                     </div>
-                    <div class="col-md-3 contents">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 contents">
                         <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec lectus ligula, ultricies ut est nec, varius.</p>
                     </div>
-                    <div class="col-md-3 contents">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 contents">
                         <p>In aliquet fringilla libero, quis dapibus massa tincidunt a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                     </div>
-                    <div class="col-md-3 contents">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 contents">
                         <p>Fusce vitae enim et tellus lacinia condimentum eu at massa. Nullam laoreet, elit quis hendrerit maximus, ante sem congue lorem, at vestibulum felis mauris et arcu.</p>
                     </div>
-                    <div class="col-md-3 contents">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 contents">
                         <p>Proin suscipit orci mi, ut hendrerit mi molestie nec. Donec efficitur risus erat, eu auctor massa molestie vitae.</p>
                     </div>
                     </div>
@@ -69,6 +95,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

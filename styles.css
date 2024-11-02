@@ -16,7 +16,7 @@
     border: 1px solid #ddd;
     width: 100%;
 }
-.col-md-3{
+.col-md-3 {
     margin-top: 8.3%;
 }
 
@@ -24,9 +24,9 @@
     background-color: #f8f9fa;
     padding: 20px;
     margin-left: 10px;
-    width: 30%;
     margin-top: 10px;
 }
-.highlight {
-    display: inline-block;
+
+#Opciones{
+    margin-top: 150px;
 }
